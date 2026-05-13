@@ -1,0 +1,13 @@
+---
+- name: Deploy artifact to localhost
+  hosts: localhost
+
+  tasks:
+    - name: Copy the artifact to target location
+      become: true
+      become_user: student
+      become_method: su
+
+      copy:
+        src: "/var/lib/jenkins/workspace/devops8/target/mvn-8-1.0-SNAPSHOT.jar"
+        dest: "/home/student/Desktop/1CR23CS051/mvn-8/pro8.jar"
