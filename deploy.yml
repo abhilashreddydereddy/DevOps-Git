@@ -9,5 +9,5 @@
       become_method: su
 
       copy:
-        src: "/var/lib/jenkins/workspace/devops8/target/mvn-8-1.0-SNAPSHOT.jar"
-        dest: "/home/student/Desktop/1CR23CS051/mvn-8/pro8.jar"
+        src: "/var/lib/jenkins/workspace/devops8/target/mvn-app-1.0-SNAPSHOT.jar"
+        dest: "/home/student/Desktop/1CR23CS051/mvn-app/pro8.jar"
